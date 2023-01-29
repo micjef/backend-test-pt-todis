@@ -1,10 +1,16 @@
 import { Entity, PrimaryGeneratedColumn, Column } from 'typeorm';
 
 @Entity()
-export class Karyawan {
+export class Tugas {
   @PrimaryGeneratedColumn()
   id: number;
 
   @Column()
-  name: string;
+  assigne: number;
+
+  @Column()
+  title: string;
+
+  @Column()
+  description: string;
 }
